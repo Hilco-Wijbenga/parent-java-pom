@@ -15,46 +15,46 @@
   limitations under the License.
 -->
 <project
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                      http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                        http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <parent>
+    <parent>
+        <groupId>org.cavebeetle</groupId>
+        <artifactId>parent-pom</artifactId>
+        <version>1-SNAPSHOT</version>
+    </parent>
+
     <groupId>org.cavebeetle</groupId>
-    <artifactId>parent-pom</artifactId>
+    <artifactId>parent-java-pom</artifactId>
     <version>1-SNAPSHOT</version>
-  </parent>
+    <packaging>pom</packaging>
 
-  <groupId>org.cavebeetle</groupId>
-  <artifactId>parent-java-pom</artifactId>
-  <version>1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <name>Parent Java POM</name>
 
-  <name>Parent Java POM</name>
+    <build>
 
-  <build>
+        <plugins>
 
-    <plugins>
+            <plugin>
 
-      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
 
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
 
-      </plugin>
+            <plugin>
 
-      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
 
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
+            </plugin>
 
-      </plugin>
+        </plugins>
 
-    </plugins>
-
-  </build>
+    </build>
 
 </project>
