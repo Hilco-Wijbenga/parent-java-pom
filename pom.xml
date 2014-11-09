@@ -30,7 +30,7 @@
 
     <groupId>org.cavebeetle</groupId>
     <artifactId>parent-java-pom</artifactId>
-    <version>2-SNAPSHOT</version>
+    <version>2</version>
     <packaging>pom</packaging>
 
     <name>Parent Java POM</name>
